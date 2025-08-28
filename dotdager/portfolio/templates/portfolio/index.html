@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot Dager - Portafolio</title>
+    <link rel="stylesheet" href="static/portfolio/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="profile">
+            <img src="static/portfolio/profile.jpg" alt="Foto de perfil de Dot Dager" class="profile-pic">
+            <h1>Dot Dager</h1>
+            <p class="tagline">Hola, soy Dot Dager, y si algo puedo decir con certeza es que me tomo las cosas tan en serio como un gato persiguiendo un láser: cero drama, solo diversión.</p>
+        </div>
+    </header>
+
+    <main class="content" data-aos="fade-up">
+        <section class="about">
+            <div class="section-title-float animate__animated animate__fadeInDown"><h2>Sobre Mí</h2></div>
+            <p class="tagline animate__animated animate__fadeInUp">Mariano Villa, un programador relajado que disfruta el viaje tanto como el destino. Ya sea escribiendo código, acariciando gatos, tocando la guitarra o perdiéndome en pensamientos filosóficos, siempre trato de encontrar el lado divertido de la vida. Me encanta compartir mi experiencia con quienes, como yo, creen que aprender no tiene por qué ser aburrido. Aquí no solo encontrarás líneas de código, sino también acordes, reflexiones y muchas risas. ¡Bienvenido a mi pequeño rincón de internet, donde la creatividad y la curiosidad siempre tienen un lugar!</p>
+        </section>
+
+        <section class="intereses">
+            <div class="section-title-float animate__animated animate__fadeInDown"><h2>Intereses</h2></div>
+            <div class="interest animate__animated animate__fadeInUp">
+                <img src="static/portfolio/pepino.png" alt="Pepinos" style="width: 60px; height: 60px;">
+                <p>Los pepinos son los más subestimados del universo. Refrescantes, versátiles y llenos de potencial cómico (sí, alguien tenía que decirlo). No sé si tienen algo que ver con la programación, pero, honestamente, no me importa.</p>
+            </div>
+            <div class="interest animate__animated animate__fadeInUp">
+                <i class="fas fa-cat"></i>
+                <p>Los gatos son la verdadera definición de maestros zen... y de caos programado. Si no están supervisando mis proyectos desde el teclado, están filosofando sobre la vida mientras contemplan una pared. Cada día me enseñan que la mejor solución a los problemas es una siesta bien colocada.</p>
+            </div>
+            <div class="interest animate__animated animate__fadeInUp">
+                <i class="fas fa-guitar"></i>
+                <p>La música es mi mejor compañera. Ya sea que esté explorando nuevos géneros o tarareando algo mientras el código compila (¡gracias, loops infinitos!), siempre hay un ritmo que me acompaña. Es mi forma de desconectarme, de fluir y, a veces, de bailar como si nadie estuviera mirando... aunque los gatos seguro sí lo hacen.</p>
+            </div>
+            <div class="interest animate__animated animate__fadeInUp">
+                <i class="fas fa-book"></i>
+                <p>No sé si el gato de Schrödinger estaba vivo, muerto o simplemente confundido, pero lo que sí sé es que me encanta perderme en esas preguntas profundas. La filosofía me recuerda que no siempre hay respuestas claras, y está bien, porque a veces lo importante es disfrutar del viaje... y el café que lo acompaña.</p>
+            </div>
+        </section>
+
+        <section class="social">
+            <div class="section-title-float"><h2>Conéctate Conmigo</h2></div>
+            <ul>
+                <li><a href="https://github.com/MarianoVilla/DotDager" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="https://www.youtube.com/@DotDager" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="https://www.instagram.com/dager.32/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </section>
+
+        <section class="scroll-section">
+            <iframe src="https://tbot.xyz/lumber/" title="Lumber"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Hecho con 🧡 para Dot Dager</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.about', { duration: 1000, origin: 'bottom', distance: '50px' });
+        ScrollReveal().reveal('.social', { duration: 1200, origin: 'left', distance: '100px', delay: 300 });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

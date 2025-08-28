@@ -1,0 +1,379 @@
+.intereses {
+    position: relative;
+}
+
+.intereses .section-title-float {
+    position: absolute;
+    left: calc(50% - 112px);
+    top: calc(50% - 220px);
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 2.5rem;
+    width: fit-content;
+    background: rgba(34, 40, 49, 0.95);
+    border-radius: 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border: 2px solid #8fd3f4;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intereses .section-title-float h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #b8b5b5;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .intereses .section-title-float {
+        top: -25px;
+        padding: 0.3rem 1rem;
+        min-width: 120px;
+    }
+    .intereses .section-title-float h2 {
+        font-size: 1.1rem;
+    }
+}
+/* Caja flotante para títulos de sección */
+.section-title-float {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto 2rem auto;
+    width: fit-content;
+    background: rgba(34, 40, 49, 0.95);
+    border-radius: 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    padding: 0.5rem 2.5rem;
+    z-index: 2;
+    border: 2px solid #8fd3f4;
+}
+.section-title-float h2 {
+    margin: 0;
+    color: #b8b5b5;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .section-title-float {
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    }
+    .section-title-float h2 {
+        font-size: 1.1rem;
+    }
+}
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+@media (max-width: 900px) {
+    .content {
+        padding: 1rem;
+    }
+    .about, .social, .intereses {
+        padding: 2rem 1rem;
+    }
+    .scroll-section {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 2rem 0.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+    .about, .social, .intereses {
+        padding: 1rem 0.2rem;
+    }
+    .intereses {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intereses .interest {
+        width: 90vw;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+    .scroll-section {
+        width: 220px;
+        height: 220px;
+    }
+    .footer {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
+body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #055e99;
+    background: #111111;
+}
+
+.hero {
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.about, .social, .intereses{
+    
+    margin: 2rem auto;
+    text-align: center;
+    background: linear-gradient(135deg, #0f0f0f, #266870);
+    color: white;
+    
+    padding: 4rem 2rem;
+    .intereses h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        color: #b8b5b5;
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b8b5b5;
+    text-align: center;
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social li {
+    margin: 0.5rem 0;
+}
+
+.social a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero .tagline {
+    animation: fadeIn 3s ease-in-out;
+}
+
+.profile-pic {
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero {
+    background: linear-gradient(135deg, #3f3f3f, #8fd3f4);
+    background-size: 200% 200%;
+    animation: gradientMove 10s infinite;
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social li {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social li:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px);
+}
+
+.social a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.social i {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.scroll-section {
+    position: relative;
+    width: 500px; /* Ajusta el tamaño del círculo aquí */
+    height: 500px; /* Ajusta el tamaño del círculo aquí */
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    border-radius: 50%; /* Hace que la sección sea un círculo */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del círculo */
+    cursor: pointer;
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    display: block; /* Asegura que el margen auto funcione */
+}
+
+.scroll-section:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50%; /* Hace que el iframe también sea un círculo */
+}
+.footer {
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.intereses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 6.4rem 0 2rem 0;
+}
+
+.intereses .interest {
+    background: linear-gradient(135deg, #27457c, #8fd3f4); /* Fondo de gradiente */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.2rem 1rem;
+    text-align: center;
+    width: 260px; /* Ajusta el ancho del recuadro */
+    min-height: 180px;
+    max-height: none;
+    overflow: visible;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.intereses .interest:hover {
+    background: linear-gradient(135deg, #8fd3f4, #27457c); /* Gradiente invertido al pasar el mouse */
+    transform: translateY(-5px);
+}
+
+.intereses .interest i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.intereses .interest p {
+    margin: 0;
+    font-size: 1rem;
+}
+
