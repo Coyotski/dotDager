@@ -195,10 +195,9 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 
 ## 👨‍💻 Autor
 
-**Mariano Villa (DotDager)**
+**Coyotski**
 
-- YouTube: [@DotDager](https://www.youtube.com/@DotDager)
-- Instagram: [@dager.32](https://www.instagram.com/dager.32/)
+
 
 ## 🙏 Agradecimientos
 
